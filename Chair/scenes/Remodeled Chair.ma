@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: Remodeled Chair.ma
-//Last modified: Thu, Feb 02, 2023 06:25:39 PM
+//Last modified: Thu, Feb 02, 2023 06:27:52 PM
 //Codeset: 1252
 requires maya "2023";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.2.1.1";
@@ -10,18 +10,18 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202211021031-847a9f9623";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19044)";
-fileInfo "UUID" "6404C7EB-4CE8-648F-DABF-5B8ECA4B5C87";
+fileInfo "UUID" "49D6EFAD-43D6-FB1C-27EE-7F8FDA14D72A";
 createNode transform -s -n "persp";
 	rename -uid "C6C32A21-4E6D-D51E-9E1A-E89A2CCBCFCB";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -2.8080413076623052 7.8226428268502524 6.7895942049038585 ;
-	setAttr ".r" -type "double3" -11.399999999984574 -17.599999999937467 -1.2512795664586665e-15 ;
+	setAttr ".t" -type "double3" -12.311834447708648 9.2052443005949076 -17.597247383421951 ;
+	setAttr ".r" -type "double3" -7.1999999999995525 -147.5999999999373 0 ;
 	setAttr ".rpt" -type "double3" -4.1205244702740355e-16 -5.7032345230209761e-17 3.7730032389342594e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "E7035C6A-4EC8-DD5E-8F54-10BE9015D842";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 6.7154016821243934;
+	setAttr ".coi" 21.62195798147058;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -86,7 +86,7 @@ createNode mesh -n "ChairSeat" -p "pCube1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 2.3164733648300171 0.89263197779655457 ;
+	setAttr ".pv" -type "double2" 1.1929096532985568 0.076325416564941406 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
